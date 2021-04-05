@@ -33,7 +33,8 @@ def new_cells(cells):
                 if naighbour_count == 3:
                     new_grid[x][y] = 1
     
-    new_cells = cut_grid(new_grid).tolist()
+    new_cells = cut_grid(new_grid)
+    new_cells.tolist()
     return new_cells
 
 def get_generation(cells, generations):
